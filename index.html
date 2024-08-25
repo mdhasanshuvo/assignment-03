@@ -26,6 +26,9 @@
                     colors: {
                         clifford: '#da373d',
                         'green-primary': '#ABEF5F',
+                        'title-primary': '#212121',
+                        'subtitle-primary': '#494949',
+                        'subtitle-primary-2': '#737373',
                     },
                     fontFamily: {
                         manrope: ['Manrope', 'sans-serif'],
@@ -37,55 +40,84 @@
 
 </head>
 
-<body class="font-manrope">
+<body class="font-manrope ">
     <!-- header section -->
-    <header class="container mx-auto bg-gradient-to-t from-white to-[#ffffff00]">
-        <!-- nav section -->
-        <div class="navbar bg-base-100">
-            <div class="navbar-start">
-                <i class="fa-solid fa-arrow-right bg-green-primary rounded-full -rotate-45 p-1 pr-1.5"></i>
-                <a class="text-2xl font-extrabold pl-2">Rinterio</a>
-            </div>
-            <div class="navbar-center hidden lg:flex">
-                <ul class="menu menu-horizontal px-1 text-[#737373]">
-                    <li class="text-black font-extrabold"><a>Home</a></li>
-                    <li><a>Services</a></li>
-                    <li><a>Portfolio</a></li>
-                    <li><a>Blogs</a></li>
-                    <li><a>Contact Us</a></li>
-                </ul>
-            </div>
-            <div class="navbar-end">
-                <div class="space-x-3">
-                    <i class="fa-solid fa-magnifying-glass bg-white rounded-full p-2 hidden md:inline"></i>
-                    <i class="fa-solid fa-cart-shopping bg-white rounded-full p-1  hidden md:inline"></i>
-                    <a class="btn bg-green-primary text-sm lg:text-base font-extrabold rounded-3xl  hidden md:inline py-1 md:py-2">Book Consult
-                        <i class="fa-solid fa-arrow-right bg-black rounded-full -rotate-45 p-0.5 pr-1 text-white"></i>
-                    </a>
+    <header class="bg-gradient-to-t from-white to-gray-100">
+        <div class="container mx-auto px-2 ">
+            <!-- nav section -->
+            <div class="navbar">
+                <div class="navbar-start">
+                    <i class="fa-solid fa-arrow-right bg-green-primary rounded-full -rotate-45 p-1 pr-1.5"></i>
+                    <a class="text-2xl font-extrabold pl-2">Rinterio</a>
                 </div>
-                <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
-                    </div>
-                    <ul tabindex="0"
-                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow ">
-                        <li><a>Home</a></li>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-subtitle-primary-2">
+                        <li class="text-black font-extrabold"><a>Home</a></li>
                         <li><a>Services</a></li>
                         <li><a>Portfolio</a></li>
                         <li><a>Blogs</a></li>
                         <li><a>Contact Us</a></li>
                     </ul>
                 </div>
+                <div class="navbar-end">
+                    <div class="space-x-3">
+                        <i class="fa-solid fa-magnifying-glass bg-white rounded-full p-2 hidden md:inline"></i>
+                        <i class="fa-solid fa-cart-shopping bg-white rounded-full p-2 hidden md:inline"></i>
+                        <a
+                            class="btn bg-green-primary text-sm lg:text-base font-extrabold rounded-3xl  hidden md:inline py-1 md:py-2">Book
+                            Consult
+                            <i
+                                class="fa-solid fa-arrow-right bg-black rounded-full -rotate-45 p-0.5 pr-1 text-white"></i>
+                        </a>
+                    </div>
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden bg-white rounded-full ml-3">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] p-1.5 shadow right-0 w-32 text-subtitle-primary-2">
+                            <li class="text-black font-extrabold"><a>Home</a></li>
+                            <li><a>Services</a></li>
+                            <li><a>Portfolio</a></li>
+                            <li><a>Blogs</a></li>
+                            <li><a>Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- banner section  -->
+            <div class="hero py-12">
+                <div class="hero-content text-center flex flex-col">
+                    <!-- image -->
+                    <div class="w-3/4 md:w-1/2">
+                        <img src="assets/banner.png" alt="building image">
+                    </div>
+                    <!-- text  -->
+                    <div class="md:w-11/12 lg:w-3/4 mx-auto">
+                        <h1 class="text-3xl md:text-4xl lg:text-6xl font-extrabold text-title-primary">A barn house of
+                            this design has a striking appearance</h1>
+                        <p class="py-6 text-sm md:text-base text-subtitle-primary">
+                            The barn house captivates with its blend of rustic charm and modern sophistication,
+                            featuring
+                            weathered wood, sleek metal accents, and large windows that flood the space with natural
+                            light.
+                        </p>
+                        <a
+                            class="btn bg-green-primary/40 rounded-3xl block sm:inline py-2 md:py-3 px-4 text-black text-lg font-bold">View
+                            Details
+                            <i
+                                class="fa-solid fa-arrow-right bg-green-primary rounded-full -rotate-45 p-1 pr-1.5 text-black ml-1"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
+
     </header>
 
     <main>
-
+        
     </main>
 
     <footer>
